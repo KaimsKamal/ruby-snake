@@ -23,16 +23,3 @@ class Snake
 
 end
 
-snake = Snake.new(5, 5)
-p snake.head
-p snake.instance_variable_get(:@body)
-snake.move
-p snake.instance_variable_get(:@body)   
-
-snake.turn([-1, 0])
-snake.move
-p snake.head
-
-snake.turn([0, -1])
-snake.move
-p snake.head
